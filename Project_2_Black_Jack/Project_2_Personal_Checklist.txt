@@ -1,4 +1,4 @@
-Create 4 players + dealer. TEST2
+Create 4 players + dealer. TEST3
 
 Create dealer AI. (Always stand if cards are over 17.)
 
