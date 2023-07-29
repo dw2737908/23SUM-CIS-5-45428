@@ -71,6 +71,7 @@ int main(int argc, char** argv) {
     string CardInput;
     string line;
     char Choice;
+    int Points;
     //Random number generator
     srand(static_cast<unsigned int>(time(nullptr)));
     //Card Deck.
@@ -103,6 +104,35 @@ int main(int argc, char** argv) {
     } else {
         cout << "ERROR! If you see this message, the developer messed up." << endl;
     }
+    //Points Calculations
+    if (CardInput == "1" || CardInput == "14" || CardInput == "27" || CardInput == "40") {
+        Points = 11;
+    } else if (CardInput == "2" || CardInput == "15" || CardInput == "28" || CardInput == "41") {
+        Points = 2;
+    } else if (CardInput == "3" || CardInput == "16" || CardInput == "29" || CardInput == "42") {
+        Points = 3;
+    } else if (CardInput == "4" || CardInput == "17" || CardInput == "30" || CardInput == "43") {
+        Points = 4;
+    } else if (CardInput == "5" || CardInput == "18" || CardInput == "31" || CardInput == "44") {
+        Points = 5;
+    } else if (CardInput == "6" || CardInput == "19" || CardInput == "32" || CardInput == "45") {
+        Points = 6;
+    } else if (CardInput == "7" || CardInput == "20" || CardInput == "33" || CardInput == "46") {
+        Points = 7;
+    } else if (CardInput == "8" || CardInput == "21" || CardInput == "34" || CardInput == "47") {
+        Points = 8;
+    } else if (CardInput == "9" || CardInput == "22" || CardInput == "35" || CardInput == "48") {
+        Points = 9;
+    } else if (CardInput == "10" || CardInput == "23" || CardInput == "36" || CardInput == "49") {
+        Points = 10;
+    } else if (CardInput == "11" || CardInput == "24" || CardInput == "37" || CardInput == "50") {
+        Points = 10;
+    } else if (CardInput == "12" || CardInput == "25" || CardInput == "38" || CardInput == "51") {
+        Points = 10;
+    } else if (CardInput == "13" || CardInput == "26" || CardInput == "39" || CardInput == "52") {
+        Points = 10;
+    }
+    cout << "Points: " << Points << endl;
         }
   } while (Choice == 'Y');
     
