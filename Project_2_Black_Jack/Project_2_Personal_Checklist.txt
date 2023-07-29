@@ -4,15 +4,13 @@ Create dealer AI. (Always stand if cards are over 17.)
 
 Give each player there own file.
 
-Move art to external file.
+Move art to external file. ✓
 
-Create an array for the cards.
+Create an array for the cards. ✓
 
 Keep researching "user libraries" until I understand it.
 
-Find a way to choose a character in the array at random.
-
-Move array to external file.
+Find a way to choose a character in the array at random. ✓
 
 Add advanced Black Jack moves like splitting. (Maybe)
 
