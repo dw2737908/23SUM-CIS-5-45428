@@ -68,7 +68,7 @@ int main(int argc, char** argv) {
     cin >> Players;
     if (Players > 4 || Players < 1) {
         cout << "INVALID INPUT!";
-        return 0;
+        exit(0);
     }
     //Random number generator
     srand(static_cast<unsigned int>(time(nullptr)));
@@ -82,7 +82,7 @@ int main(int argc, char** argv) {
         "51", "52"
     };
     const int numCards = cardNumbers.size();
-    int randomIndex = std::rand() % numCards;
+    int randomIndex = rand() % numCards;
     //The Dealer goes first.
     cout << "Dealer's Cards" << endl;
     for (Dealer = 0; Dealer < 17; Dealer += Points) {//Dealer always hits if card total is under 17.
@@ -301,7 +301,7 @@ int main(int argc, char** argv) {
     
     map<int, string> cardArtMap = readCardArt("card_art.txt", CardInput);
     do {
-        randomIndex = std::rand() % numCards;//Shuffles deck.
+        randomIndex = rand() % numCards;//Shuffles deck.
         CardInput = cardNumbers[randomIndex];
         cardArtMap = readCardArt("card_art.txt", CardInput);
         //Player 2 makes a choice.
@@ -415,7 +415,7 @@ int main(int argc, char** argv) {
     
     map<int, string> cardArtMap = readCardArt("card_art.txt", CardInput);
     do {
-        randomIndex = std::rand() % numCards;//Shuffles deck.
+        randomIndex = rand() % numCards;//Shuffles deck.
         CardInput = cardNumbers[randomIndex];
         cardArtMap = readCardArt("card_art.txt", CardInput);
         //Player 3 makes a choice.
@@ -530,7 +530,7 @@ int main(int argc, char** argv) {
     
     map<int, string> cardArtMap = readCardArt("card_art.txt", CardInput);
     do {
-        randomIndex = std::rand() % numCards;//Shuffles deck.
+        randomIndex = rand() % numCards;//Shuffles deck.
         CardInput = cardNumbers[randomIndex];
         cardArtMap = readCardArt("card_art.txt", CardInput);
         //Player 4 makes a move.
